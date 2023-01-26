@@ -1,0 +1,118 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(rootProject.file("local.properties")))
+android {
+    namespace 'com.example.socion'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.socion"
+        minSdk 23
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField("String", "AUTH_TOKEN", "\"" + localProperties['auth_token'] + "\"")
+            buildConfigField("String", "AUTH_URL", "\"" + localProperties['auth_url'] + "\"")
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            buildConfigField("String", "AUTH_TOKEN", "\"" + localProperties['auth_token'] + "\"")
+            buildConfigField("String", "AUTH_URL", "\"" + "\"")
+
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    viewBinding {
+        enabled = true
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.firebase:firebase-firestore:24.4.1'
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.2'
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    //Lottie Animation
+    def lottieVersion = "5.2.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    //Country Codes
+    implementation 'com.hbb20:ccp:2.6.1'
+
+    //Pin
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+
+    implementation 'live.videosdk:rtc-android-sdk:0.1.8'
+    implementation 'com.nabinbhandari.android:permissions:3.8'
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation 'com.android.volley:volley:1.2.1'
+    //Material Search Bar -------------------------------
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.5'
+    //Round Image View ----------------------------------
+    implementation 'com.mikhaellopez:circularimageview:4.3.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    //Glide ---------------------------------------------
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation 'org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.1.0'
+    implementation 'me.relex:circleindicator:2.1.6'
+
+    //Image Picker-----------------------------------------
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+    implementation "androidx.activity:activity-ktx:1.6.1"
+    implementation "androidx.fragment:fragment-ktx:1.5.4"
+
+    //Glide to fetch Images and Android SVG
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation 'com.caverock:androidsvg-aar:1.4'
+
+    //Navigation Bar-----------------------------------
+    implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.7.21'
+
+    implementation "com.github.skydoves:androidribbon:1.0.4"
+
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.5'
+
+    //Screen Recording
+    implementation 'com.github.HBiSoft:HBRecorder:2.0.5'
+
+    implementation files('libs/YoutubeAndroidPlayerApi.jar')
+}

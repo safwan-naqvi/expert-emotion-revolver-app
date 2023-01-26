@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!-- App Color Scheme -->
+    <color name="appWhite">#FFFFFFFF</color>
+    <color name="appBlack">#2A3640</color>
+    <color name="appText">#1B1A17</color>
+    <color name="appRed">#F20519</color>
+    <color name="appGold">#D97904</color>
+    <color name="appBrown">#BF5B04</color>
+    <color name="appPink">#F2C1AE</color>
+    <color name="appOrange">#F0A500</color>
+    <color name="appOrangeDark">#BA7919</color>
+    <!--reds-->
+    <color name="md_red_400">#FF5D5D</color>
+    <color name="md_red_500">#EF5350</color>
+
+    <!-- pinks -->
+
+    <!--grey-->
+    <color name="md_grey_300">#E0E0E0</color>
+    <color name="md_grey_700">#616161</color>
+
+    <!--blue grey-->
+    <color name="md_blue_grey_200">#B0BBC5</color>
+
+
+    <color name="md_grey_1000">#383838</color>
+    <color name="md_grey_200">#404B53</color>
+    <color name="md_grey_100A">#2B3034</color>
+    <color name="text_color">#9A9FA5</color>
+    <color name="md_grey_2000">#6F767E</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color">#FAFAFA</color>
+    <color name="transparentColor">#00000000</color>
+
+    <color name="colorPrimary">#5568FE</color>
+    <color name="colorPrimaryVariant">#1A1C22</color>
+    <color name="matteBlack">#565759</color>
+</resources>

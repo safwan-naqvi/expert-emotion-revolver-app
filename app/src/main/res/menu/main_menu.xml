@@ -1,0 +1,21 @@
+<!-- bottom_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cnb_unselectedColor="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:cnb_iconColor="@color/appBlack" />
+    <item
+        android:id="@+id/movies"
+        android:icon="@drawable/ic_movie"
+        android:title="Movies"
+        app:cnb_iconColor="@color/appBlack" />
+    <item
+        android:id="@+id/songs"
+        android:icon="@drawable/ic_music"
+        android:title="Songs"
+        app:cnb_iconColor="@color/appBlack" />
+</menu>

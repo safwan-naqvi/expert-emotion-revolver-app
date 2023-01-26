@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "792436098786",
+    "project_id": "socion-afd79",
+    "storage_bucket": "socion-afd79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792436098786:android:4658d51ade6098012540bb",
+        "android_client_info": {
+          "package_name": "com.example.socion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792436098786-ta8qguajq2p62nljrn8ppi66eq2avl5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB847YrxsWrYHNPxYcVhrygGYqf3lQWAn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792436098786-ta8qguajq2p62nljrn8ppi66eq2avl5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

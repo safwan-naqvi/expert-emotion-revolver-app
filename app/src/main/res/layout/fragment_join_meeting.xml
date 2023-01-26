@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/joinMeetingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_30sdp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/meetingMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_style"
+        android:clickable="false"
+        android:elevation="0dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:letterSpacing="0"
+        android:padding="@dimen/_15sdp"
+        android:shadowColor="#202427"
+        android:text="Choose Meeting Type"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/_14sdp" />
+
+    <EditText
+        android:id="@+id/etMeetingId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:background="@drawable/et_style"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:hint="@string/enter_meeting_code"
+        android:maxLines="1"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/text_color"
+        android:textSize="@dimen/_14sdp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnJoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:letterSpacing="0"
+        android:padding="@dimen/_16sdp"
+        android:text="@string/join_meeting"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14sdp"
+        app:cornerRadius="15dp" />
+
+</LinearLayout>

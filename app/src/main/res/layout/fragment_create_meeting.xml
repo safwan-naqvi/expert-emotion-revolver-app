@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createMeetingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="36dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/meetingCreateMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_style"
+        android:clickable="false"
+        android:elevation="0dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:letterSpacing="0"
+        android:padding="@dimen/_15sdp"
+        android:shadowColor="#202427"
+        android:text="Choose Meeting Type"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/_14sdp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnJoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0"
+        android:padding="16dp"
+        android:text="@string/join_meeting"
+        android:textAllCaps="false"
+        android:textFontWeight="700"
+        android:textSize="18dp"
+        app:cornerRadius="15dp" />
+
+</LinearLayout>
